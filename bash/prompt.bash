@@ -48,4 +48,4 @@ BIWhite='\e[1;97m'      # White
 
 ## make it pretty
 export CLICOLOR=1
-export PS1="\u@\h \t \[$Blue\]\w\[$Yellow\]\$(__git_ps1 ' (%s)') \[$Purple\]\$(~/.rvm/bin/rvm-prompt v g)\[$Color_Off\]\$ "
+export PS1="\u@\h \t \[$Blue\]\w\[$Yellow\]\$(__git_ps1 ' (%s)') \[$Purple\]\$(~/.rvm/bin/rvm-prompt v g)\[$Color_Off\] \$ "
