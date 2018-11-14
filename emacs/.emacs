@@ -14,11 +14,11 @@
 
 ;; whitespace
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Useless-Whitespace.html
-(setq-default show-trailing-whitespace t)
+(setq show-trailing-whitespace t)
 
 ;; indentation
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Indentation.html#Indentation
-(setq-default indent-tabs-mode nil)
+(setq indent-tabs-mode nil)
 (setq css-indent-offset 2)
 (setq js-indent-level 2)
 
