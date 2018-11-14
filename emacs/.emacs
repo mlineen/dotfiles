@@ -14,7 +14,9 @@
 
 ;; whitespace
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Useless-Whitespace.html
-(setq show-trailing-whitespace t)
+(global-whitespace-mode t)
+(setq whitespace-style (quote (face trailing lines-tail)))
+(setq whitespace-line-column 120)
 
 ;; indentation
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Indentation.html#Indentation
