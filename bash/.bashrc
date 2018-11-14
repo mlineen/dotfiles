@@ -1,4 +1,5 @@
 source "$HOME/code/dotfiles/bash/alias.bash"
+source "$HOME/code/dotfiles/bash/alias-private.bash"
 source "$HOME/code/dotfiles/bash/env.bash"
 source "$HOME/code/dotfiles/bash/prompt.bash"
 
