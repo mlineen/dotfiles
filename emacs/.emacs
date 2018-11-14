@@ -2,6 +2,10 @@
 ;; http://www.gnu.org/software/emacs/manual/html_node/emacs/Backup.html
 (setq make-backup-files nil)
 
+;; follow symlinks
+;; https://www.gnu.org/software/emacs/manual/html_node/emacs/General-VC-Options.html
+(setq vc-follow-symlinks t)
+
 ;; line numbering
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Position-Info.html
 (global-display-line-numbers-mode t)
@@ -9,9 +13,18 @@
 (column-number-mode t)
 
 ;; whitespace
+;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Useless-Whitespace.html
 (setq-default show-trailing-whitespace t)
 
 ;; indentation
+;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Indentation.html#Indentation
 (setq-default indent-tabs-mode nil)
 (setq css-indent-offset 2)
 (setq js-indent-level 2)
+
+;; MELPA
+;; http://melpa.org/#/getting-started
+(require 'package)
+(add-to-list 'package-archives (cons "melpa-stable" "https://stable.melpa.org/packages/") t)
+(package-initialize)
+(require 'haml-mode)
