@@ -30,3 +30,7 @@
 (add-to-list 'package-archives (cons "melpa-stable" "https://stable.melpa.org/packages/") t)
 (package-initialize)
 (require 'haml-mode)
+
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+(put 'downcase-region 'disabled nil)
