@@ -1,6 +1,3 @@
-source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/git-prompt.sh
-
 ## prompt colors
 ## https://wiki.archlinux.org/index.php/Color_Bash_Prompt
 # Reset
