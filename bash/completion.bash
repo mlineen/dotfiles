@@ -8,6 +8,3 @@ if type brew &>/dev/null; then
     done
   fi
 fi
-
-# bin/tf auto-completion
-source ~/code/chef-repo/code/bin/completion.bash
