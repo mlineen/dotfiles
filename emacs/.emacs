@@ -20,7 +20,7 @@
 
 ;; indentation
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Indentation.html#Indentation
-(setq indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 (setq css-indent-offset 2)
 (setq js-indent-level 2)
 
@@ -34,3 +34,22 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 (put 'downcase-region 'disabled nil)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (elixir-mode markdown-mode yaml-mode php-mode haml-mode))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; Elixir support
+;; https://github.com/elixir-editors/emacs-elixir
+(unless (package-installed-p 'elixir-mode)
+  (package-install 'elixir-mode))
