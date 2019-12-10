@@ -9,6 +9,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # Prefer homebrew over system
 export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
